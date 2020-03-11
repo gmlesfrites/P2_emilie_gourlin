@@ -1,0 +1,58 @@
+﻿/*Couleurs
+Gris primaire: #607d8b;
+Gris Light:#8eacbb;
+Gris Dark:#34515e;
+
+Rose primaire:; #ef6191;
+Rose light: #ff93c1;
+Rose dark: #b92c64;
+*/
+body{
+	word-wrap: break-word;
+	font-family:'Roboto','Sans-serif';
+}
+
+.h3texte{
+	background-color:#34515e;
+	color:#ffffff;
+	text-align:center;
+}
+
+h3{
+	text-transform: uppercase;
+}
+
+#dev{
+	text-decoration:underline;
+	text-decoration-color: #ef6191;
+}
+
+h1{
+	font-size:40px;
+	text-transform:uppercase;
+}
+
+h2{
+	font-size:30px;
+	font-weight:bold;
+}
+
+
+img{
+	overflow: hidden;
+	border-radius::70px;
+	-webkit-border-radius:70px;
+    -moz-border-radius:70px;
+	width:150px;
+	height:150px;
+	border:solid #ef6191 2px;
+	box-shadow: 1px 1px 0px #ef6191;
+	} 
+
+	#emilie{
+	color: #ef6191;
+}
+
+#colonne{
+	background-color:#ef6191;
+}
