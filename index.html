@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE html>
 
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr">
 <head>
+    <!--Balises meta-->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CV en Ligne - page web statique responsive" />
-
-    <title>CV en ligne - Emilie GOURLIN</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Liens vers Font Awesome -->
     <script src="https://kit.fontawesome.com/6a89ea6dae.js" crossorigin="anonymous"></script>
@@ -22,70 +21,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!--Lien Style CSS-->
-    <link rel="stylesheet" href="C:\wamp64\www\Creations\P2\main.css" />
+    <link rel="stylesheet" href="main.css">
+
+
+<!--media="screen and (max-width:1280px)" reste à faire-->
+
+
+     <title>CV en ligne - Emilie GOURLIN</title>
 </head>
 
 <body>
-    <!--Partie de gauche-->           
-    <div id="colonne" style="border:solid #ff93c1 1px">    
-        <p><img src="C:\wamp64\www\Creations\maPhoto.jpg" alt="Photo CV" id="photoCV"></p>
-        <div id="contact">
-            <h3>contact</h3>
-            <address>Adresse
-            <p>Mon adresse à Paris (75)</p>
-            </address>
-            <p>Email <br/>
-            <a href="mailto:emilieviard.photographie@gmail.com">emilieviard.photographie@gmail.com</a></p>
-        </div>
-        <div id="apropos">
-            <h3>à propos de moi</h3>
-            <p>Profession : communicante ! </br> Spécificité : touche à tout ! </br> Objectif : la qualité ! </p>
-            <p>Résolution 2020 : je diversifie mon activité en acquérant de nouvelles compétences. C'est la raison pour laquelle j'étudie nuit et jour, par le biais du parcours de formation "Développeur Web" chez Openclassrooms.</p>
-        </div>
-        <div id="loisirs">
-            <h3>loisirs</h3>
-            <p>petits icones font awesome</p>
-        </div>
-    </div>
+     <!--Pour réaliser deux colonnes alignées en haut-->
+     <div id="container">  
 
-    <!--Informations utiles pour contenu du CV-->
-    <div>
-        <h1><span id="emilie">Emilie</span> GOURLIN</h1>
-        <h2><span id="dev">Dével</span>oppeur WEB</h2>
-        <section>
-            <h3>experience professionnelle</h3>
-            <h4> Responsable Communication en Etablissement. SNCF, Etablissement Infrastructure Circulation de Paris Est.</h4>
-                <div class="detail">Responsable de la Communication interne d'un établissement de 500 personnes.<br/>
-                    Communcation interne. <br/>
-                    Organisation d’événements.<br/>
-                    Tutrice<br/>
-                </div>
-        </section>
-        <section>
-            <h4>Coordinatrice Formation - Correspondante Alternance. SNCF, Etablissement Traction Paris Sud-est.</h4>
-                <div class="detail">Référente et Animatrice de la Formation et de l’Alternance.<br/> 
-                    Appui Rh. <br/>
-                    Missions de communication. <br/>
-                    Chargée de recrutement.
-                </div>
-        </section>
-        <section>
-            <h4>Responsable d'équipe commerciale. SNCF, Etablissement Tansilien de Melun.</h4>
-            <div class="detail"> Management, animation et développement professionnel de l’équipe du secteur commercial de Corbeil Essonnes</div>
-        </section>
-        <section>
-            <h3>formation</h3>
+        <!--Partie de gauche-->           
+        <aside>    
+            <figure><img src="maPhoto.jpg" alt="Photo CV" id="photoCV" class="circle responsive-img"></figure>
             
-            <p>Openclassrooms : Formation Développeur Web</p>
-            <p>CIF Hors Temps de Travail avec Lignes & Formations, 2013-2016.Formation Reporter Photographe option retouche numérique</p>
-            <p>2003 - Février 2005 : BTS Ventes et Productions Touristiques. Obtention en juin 2005 (candidate libre).</p>
-        </section>
-        <<section>        
-            <h3>Recommandations</h3>
-            <div class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum incidunt libero, beatae ad tempora, labore aliquid dolorem voluptatum praesentium doloremque dignissimos aspernatur ab enim est pariatur eos sit excepturi iure vel neque! Impedit eligendi modi nostrum, quia vero dolores accusantium!</div>
-        </section> 
-    </div>
+            <!--CONTACT-->
+            <section>
+                <h3 class="titre">contact</h3>
+                <p>Adresse</p>
+                <p>Mon adresse à Paris (75)</p>
+                <p>Email</p>
+                <p><a href="mailto:emilieviard.photographie@gmail.com">emilieviard.photographie@gmail.com</a></p>
+            </section>
 
+            <!--A PROPOS-->
+            <section>
+                <h3 class="titre">à propos de moi</h3>
+                <p>Profession : communicante ! </br> Spécificité : touche à tout ! </br> Objectif : la qualité !</p>
+                <p>Résolution 2020 : je diversifie mon activité en acquérant de nouvelles compétences. C'est la raison pour laquelle j'étudie nuit et jour, par le biais du parcours de formation "Développeur Web" chez Openclassrooms.</p>
+            </section>
+            
+            <!--LOISIRS-->
+            <section>
+                <h3  class="titre">loisirs</h3>
+                <!--Liens icônes font awesome-->
+                <p><i class="fas fa-hiking"></i></p>
+                <p><i class="fas fa-camera-retro"></i></p>
+                <p><i class="fas fa-plane-departure"></i></p>
+            </section>
+        </aside>
+
+        <!--Informations utiles pour contenu du CV-->
+        <div id="contenu">
+            <h1><span id="emilie">Emilie</span> GOURLIN</h1>
+            <h2><span id="dev">Dével</span>oppeuse WEB freelance</h2>
+            
+            <h3 class="droite"> <i class="fas fa-briefcase"></i>experience professionnelle</h3>
+            <section>
+                <p> Responsable Communication en Etablissement. SNCF, Etablissement Infrastructure Circulation de Paris Est.</p>
+                <p class="detail">Responsable de la Communication interne d'un établissement de 500 personnes.<br/>
+                Communication interne.<br/>Organisation d’événements.<br/>Tutrice.</p>
+            </section>
+            <section>
+                <p>Coordinatrice Formation - Correspondante Alternance. SNCF, Etablissement Traction Paris Sud-est.</p>
+                <p class="detail">Référente et Animatrice de la Formation et de l’Alternance.<br/> Appui Rh.<br/>Missions de communication.<br/>
+                Chargée de recrutement.</p>
+            </section>
+            <section>
+                <p>Responsable d'équipe commerciale. SNCF, Etablissement Tansilien de Melun.</p>
+                <p class="detail"> Management, animation et développement professionnel de l’équipe du secteur commercial de Corbeil Essonnes</p>
+            </section>
+            
+            <h3 class="droite"><i class="fas fa-graduation-cap"></i>formation</h3>
+            <div>   
+                <section>
+                    <p><i class="far fa-dot-circle"></i>2020</p>
+                    <p>Openclassrooms : Formation Développeur Web</p>
+                 </section>
+                 <section>   
+                    <p><i class="far fa-circle"></i>2013-2016</p>
+                    <p>CIF Hors Temps de Travail avec Lignes & Formations.Formation Reporter Photographe option retouche numérique</p>
+                </section>
+                <section>    
+                    <p><i class="far fa-circle"></i>2003 - Février 2005</p>
+                    <p>BTS Ventes et Productions Touristiques. Obtention en juin 2005 (candidate libre).</p>
+                </section>
+            </div> 
+           
+            <!--RECOMMANDATIONS-->
+            <h3 class="droite"><i class="fas fa-pencil-alt"></i>Recommandations</h3>
+            <div>
+                <section id="reco1">        
+                    <p class="detail">Maxime KIEMAN</p>
+                    <p class="detail">Directeur, Mon agence</p>
+                    <p class="detail">Telephone :</p>
+                    <p class="detail">Email : name@email.com</p>
+                </section> 
+                 <section id="reco2">        
+                    <p class="detail">Maxime KIEMAN</p>
+                    <p class="detail">Directeur, Mon agence</p>
+                    <p class="detail">Telephone :</p>
+                    <p class="detail">Email : name@email.com</p>
+                </section> 
+            </div>
+        </div>
+     
+     </div> 
+       
+    <!--Footer en dehors du container-->
     <footer>@Emilie GOURLIN - 2020 </footer>
+
    </body>
 </html>
