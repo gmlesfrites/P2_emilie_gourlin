@@ -4,8 +4,8 @@
     <head>
         <!--Balises meta-->
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="CV en Ligne - page web statique responsive" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <!-- Liens vers Font Awesome -->
@@ -15,21 +15,19 @@
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 
         <!-- Liens vers Google Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
         <!--Liens vers Framework Materialize.css-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        <!--Lien Style CSS-->
-        <link rel="stylesheet" href="style.css" media="screen and (max-width:1280px)">
-        
+        <!--Lien Style CSS   à traiter media="screen and (max-width:1280px)">-->
+        <link rel="stylesheet" href="style.css">
         <title>CV en ligne - Emilie GOURLIN</title>
     </head>
-
     <body>
          <!--Pour réaliser deux colonnes alignées en haut-->
          <div id="container">  
-
             <!--Informations utiles pour contenu du CV-->
             <div id="contenu">
                 <section id="entete">
@@ -42,59 +40,59 @@
                      <!--TITRE FORMATION-->
                     <h3 class="droite"><i class="fas fa-graduation-cap"></i>formation</h3>
 
-                    <!--Formation 1-->
-                    <ul>
-                        <li><i class="far fa-dot-circle"></i> 2020</li> 
-                        <li>Openclassrooms : Formation Développeur Web</li>
-                    </ul>
-
+                    <!--Formation 1-->   
+                    <p><i class="far fa-dot-circle"></i>2020</p>
+                    <p>Paris</p>
+                    <p class="upper">Openclassrooms</p>
+                    <p>Formation Développeur Web Junior</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nihil voluptas dolores quo minus quam, atque sint iste nobis veritatis.</p>
+                        
                     <!--Formation 2-->
-                    <ul>    
-                        <li><i class="far fa-circle"></i>2003 - Février 2005</li>
-                        <li>BTS Ventes et Productions Touristiques. Obtention en juin 2005 (candidate libre).</li>
-                    </ul>
+                    <p><i class="far fa-circle"></i>2003 - Février 2005</p>
+                    <p>Peltre</p>
+                    <p class="upper">Lycée Notre-Dame</p>
+                    <p>BTS VPT. Obtention en juin 2005 (candidate libre).</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptatibus debitis exercitationem doloremque cum corporis sapiente, maxime, magni fugit consequuntur!</p>
                 </section>
 
                 <section>
                     <!--TITRE EXPERIENCE-->
                     <h3 class="droite"> <i class="fas fa-briefcase"></i>experience professionnelle</h3>
-                    
+                
                     <!--Experience 1-->
-                    <ul>
-                        <li><i class="far fa-dot-circle"></i>Responsable Communication en Etablissement. SNCF</li>
-                        <li>Responsable de la Communication interne d'un établissement de 500 personnes.</li>
-                        <li>Organisation d’événements.</li>
-                    </ul>
-                    
+                    <p><i class="far fa-dot-circle"></i>2015-2020</p>
+                    <p>Paris</p>
+                    <p class="upper">sncf</p>
+                    <p>Responsable Communication interne</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo harum ut fugit, et laborum, vel. Dolore exercitationem reiciendis nobis deserunt.</p>     
+
                     <!--Experience 2-->
-                    <ul>
-                        <li><i class="far fa-circle"></i>Coordinatrice Formation - Correspondante Alternance. SNCF.</li>
-                        <li>Référente et Animatrice de la Formation et de l’Alternance.</li>
-                        <li>Missions de communication.</li>
-                        <li>Chargée de recrutement.</li>
-                    </ul>
+                    <p><i class="far fa-circle"></i>2010-2015</p>
+                    <p>Paris</p>
+                    <p class="upper">SNCF</p>
+                    <p>Coordinatrice Formation - Correspondante Alternance.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio fuga quo laborum velit quis nemo veniam nam incidunt. Asperiores, placeat?</p>
 
                     <!--Expérience 3-->
-                    <ul>
-                        <li><i class="far fa-circle"></i>Responsable d'équipe commerciale. SNCF.</li>
-                        <li>Management, animation et développement professionnel de l’équipe du secteur commercial de Corbeil Essonnes</li>
-                    </ul>
-                </section>
-                         
+                    <p><i class="far fa-circle"></i>2008-2010</p>
+                    <p>Corbeil-Essonnes</p>
+                    <p class="upper">SNCF</p>
+                    <p>Responsable d'équipe commerciale.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus inventore, amet quis explicabo tenetur iusto vero, impedit praesentium iure rem.</p>
+                </section>       
+
                 <section>
                     <!--RECOMMANDATIONS-->
                     <h3 class="droite"><i class="fas fa-pencil-alt"></i>Recommandations</h3>
-                    
-                    <div>
-                        <!--Recommandation 1-->
-                        <ul id="reco1">        
+                    <!--Recommandation 1-->
+                    <div id="reco">
+                        <ul>        
                             <li>Maxime KIEMAN</li>
                             <li>Directeur, Mon agence</li>
                             <li>Telephone :</li>
                             <li>Email : name@email.com</li>
                         </ul> 
-
-                         <ul id="reco2">        
+                        <ul>        
                             <li>Maxime KIEMAN</li>
                             <li>Directeur, Mon agence</li>
                             <li>Telephone :</li>
@@ -102,10 +100,7 @@
                         </ul>
                     </div>
                 </section>
-
             </div> 
-
-
             <!--Partie de gauche-->           
             <aside>    
                 <!--CONTACT-->
@@ -132,18 +127,14 @@
                         <li><a href="@nameSkype">@nameSkype</a></li>
                     </ul>
                 </section>
-
                 <!--A PROPOS-->
                 <section>         
-                    <section id="justify">
-                        <h3 class="titre">à propos de moi</h3>
-                        <ul>
-                           <li>Profession : communicante ! </li>
-                           <li>Spécificité : touche à tout !</li> 
-                        </ul>
-                        
-                        <p>Vous cherchez un développeur web pour votre publicité en ligne ? Contactez-moi !</p>
-                    </section>    
+                    <h3 class="titre">à propos de moi</h3>
+                    <ul>
+                       <li>Profession : communicante !</li>
+                       <li>Spécificité : touche à tout !</li> 
+                    </ul>
+                    <p>Vous cherchez un développeur web qualifié pour votre publicité en ligne ? Contactez-moi !</p>
                 </section>
                 
                 <!--LOISIRS-->
