@@ -8,6 +8,8 @@ Rose light: #ff93c1;
 Rose dark: #b92c64;
 */
 
+
+/********************************CONTENU PRINCIPAL***********************************/
 /*Style*/
 body {
 	max-width: 70%;
@@ -34,7 +36,6 @@ h3 {
 	margin: 30px 0 30px 0;
 }
 
-/********************************CONTENU PRINCIPAL***********************************/
 #contenu {
 	width: 70%;
 	padding: 20px;
@@ -46,19 +47,6 @@ h3 {
 ul, li {
 	font-family: 'Montserrat';
 }
-
-
-/*Photo sortie de l'entête
-figure {
-	position:absolute;
-	margin:10px;
-	left:-45%;
-	top:-50%;
-}
-
-#entete {
-	position:relative;
-}*/
 
 /*Modifications sur l'entête du CV*/
 #dev {
@@ -114,6 +102,7 @@ aside {
 	flex-direction: column;
 	align-content: space-around;
 }
+
 aside li {
 	padding:0px 40px 0px 40px;
 }
@@ -150,10 +139,9 @@ a {
 	display: flex;
 	justify-content: space-around;
 	align-content: space-around;
-	
 }
 
-/*********************************MEDIA QUERIES
+/*********************************MEDIA QUERIES******************************
 @media=screen and (max-width:1200px) {
 	#container {
 		width: 100%
@@ -161,3 +149,15 @@ a {
 	}
 }*/
 
+
+/*Photo sortie du aside
+figure {
+	position:absolute;
+	margin:10px;
+	left:-45%;
+	top:-50%;
+}
+
+#entete {
+	position:relative;
+}*/
