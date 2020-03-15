@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
         <!--Lien Style CSS   à traiter media="screen and (max-width:1280px)">-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> <!--media="screen and (max-width:1200px)">-->
         <title>CV en ligne - Emilie GOURLIN</title>
     </head>
     <body>
@@ -31,7 +31,6 @@
             <!--Informations utiles pour contenu du CV-->
             <div id="contenu">
                 <section id="entete">
-                    <figure><img src="maPhoto.jpg" alt="Photo accompagnant le CV" class="circle responsive-img"></figure>
                     <h1><span id="emilie">Emilie</span> GOURLIN</h1>
                     <h2><span id="dev">Dével</span>oppeuse WEB freelance</h2>
                 </section>
@@ -41,7 +40,7 @@
                     <!--Formation 1-->
                     <div class="formation">
                         <ul>   
-                            <li><i class="far fa-dot-circle"></i>2020</li>
+                            <li><i class="far fa-dot-circle"></i> 2020</li>
                             <li>Paris</li>
                         </ul>
                         <ul>
@@ -53,12 +52,12 @@
                     <!--Formation 2-->
                     <div class="formation">
                         <ul>    
-                            <li><i class="far fa-circle"></i>2003 - Février 2005</li>
+                            <li><i class="far fa-circle"></i> 2003-2005</li>
                             <li>Peltre</li>
                         </ul>
                         <ul>
                             <li class="upper">Lycée Notre-Dame</li>
-                            <li>BTS VPT. Obtention en juin 2005 (candidate libre).</li>
+                            <li>BTS VPT</li>
                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima voluptatibus debitis exercitationem doloremque cum corporis sapiente, maxime, magni fugit consequuntur!</li>
                         </ul>
                     </div>
@@ -69,7 +68,7 @@
                     <!--Experience 1-->
                     <div class="experience">
                         <ul>
-                            <li><i class="far fa-dot-circle"></i>2015-2020</li>
+                            <li><i class="far fa-dot-circle"></i> 2015-2020</li>
                             <li>Paris</li>
                         </ul>
                         <ul>
@@ -81,24 +80,24 @@
                     <!--Experience 2-->
                     <div class="experience">  
                         <ul> 
-                            <li><i class="far fa-circle"></i>2010-2015</li>
+                            <li><i class="far fa-circle"></i> 2010-2015</li>
                             <li>Paris</li>
                         </ul>
                         <ul>
                             <li class="upper">SNCF</li>
-                            <li>Coordinatrice Formation - Correspondante Alternance.</li>
+                            <li>Coordinatrice Formation - Correspondante Alternance</li>
                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio fuga quo laborum velit quis nemo veniam nam incidunt. Asperiores, placeat?</li>
                         </ul>
                     </div>
                     <!--Expérience 3-->
                     <div class="experience">
                         <ul>
-                            <li><i class="far fa-circle"></i>2008-2010</li>
-                            <li>Corbeil-Essonnes</li>
+                            <li><i class="far fa-circle"></i> 2008-2010</li>
+                            <li>Corbeil</li>
                         </ul>
                         <ul>
                             <li class="upper">SNCF</li>
-                            <li>Responsable d'équipe commerciale.</li>
+                            <li>Responsable d'équipe commerciale</li>
                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus inventore, amet quis explicabo tenetur iusto vero, impedit praesentium iure rem.</li>
                         </ul>
                     </div>    
@@ -127,27 +126,31 @@
             <aside>    
                 <!--CONTACT-->
                 <section>
+                    <div id="photo">
+                        <figure><img src="maPhoto.jpg" alt="Photo accompagnant le CV" class="circle responsive-img"></figure>
+                    </div>    
+
                     <h3 class="titre">contact</h3>
-                    <ul>    
-                        <li>Adresse</li>
-                        <li>Mon adresse à Paris (75)</li>
-                    </ul>
-                    <ul>
-                        <li>Téléphone</li>
-                        <li>+33 (0)6 00 00 00 00</li>
-                    </ul>
-                    <ul>    
-                        <li>Email</li>
-                        <li><a href="mailto:nom@mail.com">nom@mail.com</a></li>
-                    </ul>
-                    <ul>   
-                        <li>Site Web</li>
-                        <li><a href="www.web.fr">www.web.fr</a></li>
-                    </ul>
-                    <ul>    
-                        <li>Skype</li>
-                        <li><a href="@nameSkype">@nameSkype</a></li>
-                    </ul>
+                        <ul>    
+                            <li>Adresse</li>
+                            <li>Mon adresse à Paris (75)</li>
+                        </ul>
+                        <ul>
+                            <li>Téléphone</li>
+                            <li>+33 (0)6 00 00 00 00</li>
+                        </ul>
+                        <ul>    
+                            <li>Email</li>
+                            <li><a href="mailto:nom@mail.com">nom@mail.com</a></li>
+                        </ul>
+                        <ul>   
+                            <li>Site Web</li>
+                            <li><a href="www.web.fr">www.web.fr</a></li>
+                        </ul>
+                        <ul>    
+                            <li>Skype</li>
+                            <li><a href="@nameSkype">@nameSkype</a></li>
+                        </ul>
                 </section>
                 <!--A PROPOS-->
                 <section>         
@@ -156,14 +159,17 @@
                        <li>Profession : communicante !</li>
                        <li>Spécificité : touche à tout !</li> 
                     </ul>
-                    <p>Cherchez-vous un développeur web qualifié pour créer votre publicité en ligne ? Contactez-moi !</p>
+                    <ul>
+                        <li>Cherchez-vous un développeur web qualifié pour créer votre publicité en ligne ?</li> 
+                        <li>Contactez-moi !</li>
+                    </ul>
                 </section>
                 
                 <!--LOISIRS-->
                 <section>    
                     <h3 class="titre">loisirs</h3>
                     <!--Liens icônes font awesome-->
-                    <ul id="loisirs"> 
+                    <ul id="loisirs">
                         <li><i class="fas fa-hiking"></i></li>
                         <li><i class="fas fa-camera-retro"></i></li>
                         <li><i class="fas fa-plane-departure"></i></li>
