@@ -77,11 +77,11 @@ h2 {
 /*pictos roses*/
 .fa-pencil-alt, .fa-graduation-cap, .fa-briefcase, .fa-dot-circle, .fa-circle, #emilie {
 	color: #ef6191;
+	margin: 10px;
 }
 
 .fa-pencil-alt, .fa-graduation-cap, .fa-briefcase {
 	padding-right: 15px;
-	margin: 10px;
 }
 
 .fa-dot-circle, .fa-circle {
