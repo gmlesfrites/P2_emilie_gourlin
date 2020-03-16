@@ -12,8 +12,9 @@ Rose dark: #b92c64;
 /********************************CONTENU PRINCIPAL***********************************/
 /*Style*/
 body {
-	max-width: 70%;
+	width: 1000px;
 	margin: auto;
+	border: solid 1px #34515e;
 	font-family: 'Roboto','Sans-serif';
 	font-size: 14px;
 	list-style: none;
@@ -21,13 +22,26 @@ body {
 
 /*Flexbox globale*/
 #container {
-	border: solid #34515e 1px;
 	display: flex;
 	flex-direction: row-reverse;
 }
 
+header {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-content: flex-end;
+}
+
 #photo {
-	text-align: center;
+	width: 30%;
+	padding:10px;
+	background-color: #ef6191;
+	text-align: center;	
+}
+
+#presentation {
+	width: 70%;
 }
 
 h1, h3, .upper {
@@ -41,8 +55,7 @@ h3 {
 
 #contenu {
 	width: 70%;
-	padding: 20px;
-	margin: 20px;
+	padding: 30px;
 }
 
 /*Effets de police*/
@@ -68,7 +81,6 @@ h1 {
 h2 {
 	font-weight: bold;
 	font-size: 30px;
-	margin-bottom: 80px;
 }
 
 /* bordure rose sous les titres*/
@@ -97,7 +109,7 @@ h2 {
 	padding-right: 20px;
 }
 
-.date{
+.date {
 	width: 20%;
 	margin-right: 20px;
 }
@@ -110,8 +122,8 @@ h2 {
 /*recommandations en 2 colonnes*/
 #reco {
 	display: flex;
-	margin-right:40px;
-	justify-content:space-between;
+	margin-right: 40px;
+	justify-content: space-around;
 	width: 75%;
 }
 
@@ -122,11 +134,11 @@ aside {
 	background-color: #ef6191;
 	display: flex;
 	flex-direction: column;
-	align-content: space-around;
+	justify-content:space-around;
 }
 
-p, aside li {
-	padding: 0px 40px 0px 40px;
+aside li {
+	padding: 0px 30px 0px 30px;
 }
 
 
@@ -147,9 +159,9 @@ a {
 /*pictos loisirs*/
 .fa-hiking, .fa-camera-retro, .fa-plane-departure {
 	color: #34515e;
-	font-size:20px;
-	padding:10px;
-	margin:10px;
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
 	border-radius: 50%;
 	border: solid 1px #34515e;
 }
@@ -165,30 +177,29 @@ a {
 /*********************************MEDIA QUERIES******************************/
 @media screen and (min-width: 260px) and (max-width: 1080px) 
 {
-	#container {
-		width:auto;
-		display:block;
-		} 
-	 
-	#contenu, #reco {
+
+	body {
+		max-width: 100%
+	}
+
+	#container, #contenu, #reco, #presentation, #photo, header, aside {
 		width: auto;
-		display:block;
+		display: block;
 	}
 
 	.recommandation {
 		padding-bottom: 60px;
 	}
 
-	h3, ul, li, p, #photo {
+	h3, ul, li, p {
 		height: auto;
-		font-size: auto;
+		font-size: 14px;
 	}
 
-	aside {
-	display: block;
-	margin: 20px;
-	width:auto;
+	h1, h2, #photo {
+		text-align: center;
 	}
+
 
 	h1 {
 		font-size:40px;
@@ -198,8 +209,10 @@ a {
 		font-size: 20px;
 	}
 
-	aside {
-		position:relative;
+	#photo {
+		background-color: #fff;
+		clear: both;
 	}
+
 }
 
