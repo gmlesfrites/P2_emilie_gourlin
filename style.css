@@ -173,7 +173,6 @@ a {
 	#contenu, #reco {
 		width: auto;
 		display:block;
-		border: solid blue 1px;
 	}
 
 	.recommandation {
@@ -189,7 +188,6 @@ a {
 	display: block;
 	margin: 20px;
 	width:auto;
-	border: solid black 1px;
 	}
 
 	h1 {
