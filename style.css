@@ -89,19 +89,23 @@ h2 {
 /*Alignements des dates et contenus expérience et formation*/
 .experience, .formation {
 	display: flex;
+	padding-right: 20px;
 }
 
 .date{
-	width:20%;
+	width: 20%;
+	margin-right: 20px;
 }
+
 .detail {
-	width:80%;
+	width: 80%;
 	word-wrap: break-word;
 }
 
 /*recommandations en 2 colonnes*/
 #reco {
 	display: flex;
+	justify-content:space-between;
 	width: 75%;
 }
 
@@ -116,7 +120,7 @@ aside {
 }
 
 aside li {
-	padding:0px 40px 0px 40px;
+	padding: 0px 40px 0px 40px;
 }
 
 #photo {
@@ -130,7 +134,7 @@ aside li {
 	color: #ffffff;
 	text-align: center;
 	padding: 10px 0 10px 0;
-	margin-top:100px;
+	margin-top: 100px;
 }
 
 /*tous les liens en gris*/
@@ -149,27 +153,21 @@ a {
 
 #loisirs {
 	display: flex;
-	justify-content: space-around;
-	align-content: space-around;
-}
-
-/*********************************MEDIA QUERIES******************************
-@media=screen and (max-width:1200px) {
-	#container {
-		width: 100%
-		border: solid #607d8b 1px;
+	flex-direction:row;
+	justify-content: space-between;
 	}
-}*/
 
+/*********************************MEDIA QUERIES******************************/
+@media screen and (max-width: 1081px) 
+{
+	#container, #contenu, aside {
+		display: block;
+		width: auto;
+	}
 
-/*Photo sortie du aside
-figure {
-	position:absolute;
-	margin:10px;
-	left:-45%;
-	top:-50%;
+	h2{
+		font-size: 20px;
+	}
+
 }
 
-#entete {
-	position:relative;
-}*/
