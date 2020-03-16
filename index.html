@@ -26,15 +26,21 @@
         <title>CV en ligne - Emilie GOURLIN</title>
     </head>
     <body>
-         <!--Pour réaliser deux colonnes alignées en haut-->
-         <div id="container">  
-            <div id="contenu">    
+        <header>
+            <div id="photo">
+                <img src="maPhoto.jpg" alt="Photo accompagnant le CV" class="circle responsive-img">
+            </div>  
+            <div id="presentation">
+                <h1><span id="emilie">Emilie</span> GOURLIN</h1>
+                <h2><span id="dev">Dével</span>oppeuse WEB freelance</h2>
+            </div>
+        </header>
+
+        <!--Pour réaliser deux colonnes alignées en haut-->
+        <div id="container">    
+            <div id="contenu"> 
                 <!--Informations utiles pour contenu du CV-->
-                <section id="entete">
-                    <h1><span id="emilie">Emilie</span> GOURLIN</h1>
-                    <h2><span id="dev">Dével</span>oppeuse WEB freelance</h2>
-                </section>
-                <section>
+                <section>    
                      <!--TITRE FORMATION-->
                     <h3 class="droite"><i class="fas fa-graduation-cap"></i>formation</h3>
                     <!--Formation 1-->
@@ -42,7 +48,6 @@
                         <ul class="date"> 
                             <li><i class="far fa-dot-circle"></i>2020</li>
                             <li>Paris</li>
-                          
                         </ul>
                         <ul class="detail">
                             <li class="upper">Openclassrooms</li>
@@ -71,8 +76,7 @@
                     <div class="experience">
                         <ul class="date"> 
                             <li><i class="far fa-dot-circle"></i>2015-2020</li>
-                            <li>Paris</li>
-                           
+                            <li>Paris</li>                         
                         </ul>
                         <ul class="detail">
                             <li class="upper">sncf</li>
@@ -84,8 +88,7 @@
                     <div class="experience">  
                        <ul class="date">  
                             <li><i class="far fa-circle"></i>2010-2015</li>
-                            <li>Paris</li>
-                            
+                            <li>Paris</li>    
                         </ul>
                         <ul class="detail">
                             <li class="upper">SNCF</li>
@@ -98,7 +101,6 @@
                         <ul class="date"> 
                             <li><i class="far fa-circle"></i>2008-2010</li>
                             <li>Corbeil</li>
-                          
                         </ul>
                         <ul class="detail">
                             <li class="upper">SNCF</li>
@@ -112,13 +114,13 @@
                     <h3 class="droite"><i class="fas fa-pencil-alt"></i>Recommandations</h3>
                     <!--Recommandation 1-->
                     <div id="reco">
-                        <ul>        
+                        <ul class="recommandation">        
                             <li>Maxime KIEMAN</li>
                             <li>Directeur, Mon agence</li>
                             <li>Telephone :</li>
                             <li>Email : name@email.com</li>
                         </ul> 
-                        <ul>        
+                        <ul class="recommandation">        
                             <li>Maxime KIEMAN</li>
                             <li>Directeur, Mon agence</li>
                             <li>Telephone :</li>
@@ -131,10 +133,6 @@
             <aside>    
                 <!--CONTACT-->
                 <section>
-                    <div id="photo">
-                        <figure><img src="maPhoto.jpg" alt="Photo accompagnant le CV" class="circle responsive-img"></figure>
-                    </div>    
-
                     <h3 class="titre">contact</h3>
                         <ul>    
                             <li>Adresse</li>
