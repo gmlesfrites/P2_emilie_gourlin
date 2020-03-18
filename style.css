@@ -43,13 +43,11 @@ img{
 	padding:10px;
 	background-color: #ef6191;
 	text-align: center;	
-	border:solid blue 1px;
 }
 
 #presentation {
 	width: 70%;
 	padding-left: 30px;
-	border: solid red 1px;
 }
 
 h1, h3, .upper {
@@ -196,20 +194,29 @@ a {
 	}
 
 	.recommandation {
-		padding-bottom: 60px;
+		padding-bottom: 30px;
 	}
 
 	header, #photo, #presentation {
 		background-color: #607d8b;
 	}
 
-	contenu {
-		background-color: #fafafa;
+	#container {
+		background-color: #eee;
 	}
 
 		h3, ul, li, p {
 		height: auto;
 		font-size: 14px;
+	}
+
+	h2 {
+		margin-bottom: 0px;
+		font-weight: normal;
+	}
+
+	#loisirs {
+		margin-bottom: 0px;
 	}
 
 	h1, h2, #photo {
@@ -224,11 +231,5 @@ a {
 	h2{
 		font-size: 20px;
 	}
-
-	#photo {
-		background-color: #fff;
-		clear: both;
-	}
-
 }
 
