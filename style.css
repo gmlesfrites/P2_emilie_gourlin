@@ -1,4 +1,4 @@
-﻿/*Couleurs
+/*Couleurs
 Gris primaire: #607d8b;
 Gris Light:#8eacbb;
 Gris Dark:#34515e;
@@ -10,64 +10,63 @@ Rose dark: #b92c64;
 
 
 /********************************CONTENU PRINCIPAL***********************************/
-/*Style*/
+html {
+	font-size: 100%;
+}
+
 body {
-	width: 1000px;
+	width: 100%;
 	margin: auto;
 	border: solid 1px #34515e;
 	font-family: 'Roboto','Sans-serif';
-	font-size: 14px;
-	list-style: none;
+	font-size: 16px;
+	line-height: 2em;
+	list-style-type: none;
+}
+/*Titre Emilie*/
+h1 {
+	font-size: 3em;
 }
 
-/*Flexbox globale*/
-#container {
-	display: flex;
-	flex-direction: row-reverse;
+/*Titre développeuse*/
+h2 {
+	font-weight: bold;
+	font-size: 2.3em;
 }
 
-header {
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	align-content: flex-end;
-}
-
-img{
-	max-width: 100%;
-	height: auto;
-}
-
-#photo {
-	width: 30%;
-	padding:10px;
-	background-color: #ef6191;
-	text-align: center;	
-}
-
-#presentation {
-	width: 70%;
-	padding-left: 30px;
-}
-
+/*Majuscules sur les h1, h3 et noms d'entreprises*/
 h1, h3, .upper {
 	text-transform: uppercase;	
 }	
 
+/*Titres : Contact, A propos, loisirs, Formation, Expérience et Recommandations*/
 h3 {
-	font-size: 20px;
-	margin: 30px 0 30px 0;
+	font-size: 1.6em;
 }
 
-#contenu {
-	width: 70%;
-	padding: 30px;
+/********Contenant pour les deux parties**************/
+/*Entête avec Nom, Prénom, Poste et photo*/
+header {
+	display: flex;
 }
 
-/*Effets de police*/
+/*Police de caractères des listes*/
 ul, li {
 	font-family: 'Montserrat';
-	list-style: none;
+	font-size: 1.1em;
+}
+
+.upper, .intitule {
+	font-weight: bold;
+}
+
+/*********************HEADER********************/
+/*Photo du CV*/
+#photo {
+	width: 30%;
+	padding:0.6em;
+	background-color: #ef6191;
+	text-align: center;	
 }
 
 /*Modifications sur l'entête du CV*/
@@ -75,66 +74,74 @@ ul, li {
 	text-decoration: underline #ef6191;
 	text-underline-position: under;
 }
-
-h1, h2 {
-	height: 50px;
+/*Emilie en rose*/
+#emilie {
+	color: #ef6191;
 }
 
-h1 {
-	font-size: 50px;
+/**********FORMATION---------EXPERIENCE------RECOMMANDATIONS**********/
+/*Div contenant les deux colonnes*/
+#container {
+	display: flex;
+	flex-direction: row-reverse;
 }
 
-h2 {
-	font-weight: bold;
-	font-size: 30px;
+/*div pour contenus en colonnes*/
+ #contenu, #presentation {
+	width: 70%;
+	padding:0 1.8em;
 }
 
 /* bordure rose sous les titres*/
 .droite {
 	border-bottom: solid 1px #ef6191;
-	margin-right: 20px;
 }
 
-/*pictos roses*/
-.fa-pencil-alt, .fa-graduation-cap, .fa-briefcase, .fa-dot-circle, .fa-circle, #emilie {
+/*************pictos roses*****************/
+.fa-pencil-alt, .fa-graduation-cap, .fa-briefcase, .fa-dot-circle, .fa-circle {
 	color: #ef6191;
-	margin: 10px 10px 10px 0;
+	margin: 0.6em 0.6em 0.6em 0;
 }
 
+/*picto devant parties formation, expérience et recommandations*/
 .fa-pencil-alt, .fa-graduation-cap, .fa-briefcase {
-	padding-right: 15px;
+	padding-right: 1.3em;
 }
 
+/*picto devant chaque date*/
 .fa-dot-circle, .fa-circle {
-	font-size: 10px;
+	font-size: 0.8em;
 }
 
-/*Alignements des dates et contenus expérience et formation*/
+/*******Alignements des dates et contenus expérience et formation*******/
 .experience, .formation {
 	display: flex;
-	padding-right: 20px;
 }
 
+/*Précisions de dates et lieu de travail ou formation*/
 .date {
 	width: 20%;
-	margin-right: 20px;
+	margin-right: 1.25em;
 }
 
+/*Contenu qualitatif en expérience et formation*/
 .detail {
 	width: 80%;
 	word-wrap: break-word;
+	padding-bottom: 1.8em;
 }
 
 /*recommandations en 2 colonnes*/
 #reco {
 	display: flex;
-	margin-right: 40px;
+	margin-right: 3em;
 	justify-content: space-between;
 	width: 75%;
 }
 
 
 /***************************************ASIDE*****************************************/
+/*Paramètres principaux*/
 aside {
 	width: 30%;
 	background-color: #ef6191;
@@ -143,18 +150,17 @@ aside {
 	justify-content:space-around;
 }
 
+/*Blancs tournant dans la colonne rose*/
 aside li {
-	padding: 0px 30px 0px 30px;
+	padding: 0 1.875em;
 }
-
 
 /*titres sur fond gris*/
 .titre {
 	background-color: #34515e;
 	color: #ffffff;
 	text-align: center;
-	padding: 10px 0 10px 0;
-	margin-top: 100px;
+	padding: 0.7em 0;
 }
 
 /*tous les liens en gris*/
@@ -165,9 +171,9 @@ a {
 /*pictos loisirs*/
 .fa-hiking, .fa-camera-retro, .fa-plane-departure {
 	color: #34515e;
-	font-size: 20px;
-	padding: 10px;
-	margin: 10px;
+	font-size: 1.25em;
+	padding: 0.6em;
+	margin: 0.6em;
 	border-radius: 50%;
 	border: solid 1px #34515e;
 }
@@ -175,61 +181,43 @@ a {
 #loisirs {
 	width: 100%;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
 }
 
 /*********************************MEDIA QUERIES******************************/
-@media screen and (min-width: 260px) and (max-width: 1080px) 
+@media screen and (min-width: 320px) and (max-width: 1024px) 
 {
-
 	body {
-		max-width: 100%
+		font-size: 75%;
 	}
 
-	#container, #contenu, #reco, #presentation, #photo, header, aside {
-		width: auto;
-		display: block;
-	}
-
-	.recommandation {
-		padding-bottom: 30px;
-	}
-
-	header, #photo, #presentation {
-		background-color: #607d8b;
-	}
-
-	#container {
-		background-color: #eee;
-	}
-
-		h3, ul, li, p {
-		height: auto;
-		font-size: 14px;
-	}
-
-	h2 {
-		margin-bottom: 0px;
+	h2{
+		padding-bottom: 1em;
 		font-weight: normal;
-	}
-
-	#loisirs {
-		margin-bottom: 0px;
 	}
 
 	h1, h2, #photo {
 		text-align: center;
 	}
 
-
-	h1 {
-		font-size:40px;
+	header, #photo, #presentation {
+		background-color: #607d8b;
 	}
-	
-	h2{
-		font-size: 20px;
+
+	#container, #contenu, #reco, #presentation, #photo, header, aside, .formation, .experience, .date {
+		width: 100%;
+		display: block;
+	}
+
+	.recommandation {
+		padding-bottom: 1.8em;
+	}
+
+	#container, body {
+		background-color: #eee;
+	}
+
+	#loisirs {
+		margin-bottom: 0px;
 	}
 }
-
